@@ -21,3 +21,13 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+src/components/class-components/counter.js
+src/components/ipl/IplImages.js
+src/components/ipl/IplImages.js
+src/components/ipl/iplrunners.js
+src/components/usereducer/useReducer.js
+src/components/table/table.js
+src/components/table/table.js
+
+src/components/table/table.js

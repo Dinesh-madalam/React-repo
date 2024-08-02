@@ -6,8 +6,7 @@ const CustomTable = () =>{
             <table style={{border:"1px"}}>
             <tr>
                 <th>id</th>
-                <th>Name</th>
-                
+                <th>Name</th> 
                 <th>batch</th>
                 
             </tr>
@@ -15,8 +14,7 @@ const CustomTable = () =>{
             <tr>
                 <td>1</td>
                 <td>Dinesh</td>
-                <td>6r</td>
-               
+                <td>6r</td>     
             </tr>
 
             <tr>
