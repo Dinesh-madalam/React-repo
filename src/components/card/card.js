@@ -16,14 +16,12 @@ import "./card.css"
 
 // export default Card;
 
-const Customcard = ( ) => {
+const Customcard = (prop) => {
+  const {path,height,width}=prop
   return (
     <div style= {{height:"400px",Width:"250px" ,border:"2px solid green" }}>
-    <img  src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg"  height={100} width={200} />
+    <img  src={path}  height={height} width={width} />
     <p>id : 1</p>
-    <p>title:"Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops"</p>
-    <p>"description":"Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday"</p>
-    <p>"category":"men's clothing"</p>
     </div>
   
   )
