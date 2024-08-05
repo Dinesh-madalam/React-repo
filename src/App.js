@@ -1,46 +1,35 @@
 import logo from './logo.svg';
 import './App.css';
-import IplData from './ipl_List/ipldata';
-import IplHeading from './ipl_List/iplheading';
-import IplImage from './ipl_List/iplimages';
-import IplCups from './ipl_List/iplcups';
-import Iplplayers from './ipl_List/iplplayers';
-import "./ipl.css"
-import CustomProgressBar from './components/bootstrap/progress-bar';
 
+import  { recipes } from './recipe/data';
+import { Heading } from './recipe/heading';
+import { Image } from './recipe/image';
+import { Name } from './recipe/name'; 
+import CustomList from './recipe/list';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
-
-
-const App =()=>(
-  <div>
-    <div className="nav">
-      <a>Home</a>
-      <a>Team Name</a>
-      <a>Team Logo</a>
-      <a>Cups Won</a>
-      <a>Team players</a>
+import "./recipe.css"
+function App () {
+  return (
+    <>
     
-    </div>
-    <div className="body">
-      {IplData.map((eachipl)  => (
-        <div key={eachipl.team} style={{height:"500px", width:"300px", border:"2px solid black",margin:10}} >
-          <IplHeading team={eachipl.team}/>
-          <IplImage
-          source={eachipl.image}
-          alternate="ipl image"
-          width={200}
-          height={200}/>
-          <IplCups cups={eachipl.cups}/>
-          <Iplplayers players={eachipl.players}/>
-          <CustomProgressBar scale={eachipl.cups} style={{width:"100px"}}/>
-        </div>
-      ))}
-    </div>
-    < div className="footer">
-      <p>Designed by M_Dinesh</p>
-    </div>
-  </div>   
-)
+      <div className='Menu'>
+        {
+          recipes.map((each)=>(
+            <div className='Food' >
+              <Heading item_Name={each.name}/>
+              <Image path={each.image} alter={each.name} height={150} width={150}/>
+              <Name Text={"Ingredients"}/>
+              <CustomList array={each.ingredients}/>
+              <Name Text={"Instructions"} />
+              <CustomList array={each.instructions}/>
+              
+            </div>
+          ))
+        }
+      </div>   
+    </>
+  )
+}
 
 export default App;
+

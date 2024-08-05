@@ -16,7 +16,7 @@ import "./card.css"
 
 // export default Card;
 
-const Card = ( ) => {
+const Customcard = ( ) => {
   return (
     <div style= {{height:"400px",Width:"250px" ,border:"2px solid green" }}>
     <img  src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg"  height={100} width={200} />
@@ -29,4 +29,4 @@ const Card = ( ) => {
   )
 }
 
-export default Card;
+export default Customcard;

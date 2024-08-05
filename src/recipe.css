@@ -1,0 +1,20 @@
+.Menu{
+    display: grid;
+    grid-template-columns: 25% 25% 25%;
+    gap: 30px 30px;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 30px;
+    
+}
+
+.Food{
+    height: 700px;
+    width: 470px;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 5px;
+    display: grid;
+    justify-content: center;
+    flex-wrap: wrap;
+}
